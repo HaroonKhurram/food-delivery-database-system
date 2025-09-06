@@ -40,9 +40,18 @@ ORDER BY total_revenue DESC;
 **Insight:** This analysis reveals the highest-grossing menu categories, allowing management to make data-driven decisions on where to focus marketing efforts, optimize ingredient sourcing, and potentially develop new menu items to maximize profitability.
 
 ## How to Use
-1.  Run the `schema_definition.sql` script in PostgreSQL to create the tables.
-2.  Run the `data_insertion.sql` script to populate the database with sample data.
-3.  Execute the queries in `sql_queries.sql` to reproduce the analysis.
+
+### Option 1: Using pgAdmin (Graphical Interface - Recommended for Beginners)
+1.  Create a new database in pgAdmin (e.g., `food_delivery_db`).
+2.  Open a Query Tool connected to this database.
+3.  Run the `schema_definition.sql` script to create the tables.
+4.  Run the `data_insertion.sql` script to populate the tables with sample data.
+5.  Open and run the queries in `sql_queries.sql` to perform the analysis.
+
+### Option 2: Using psql (Command Line - For Advanced Users)
+1.  Create a new database: `createdb food_delivery_db`
+2.  Connect to the database: `psql food_delivery_db`
+3.  Run the master setup script: `\i run_project.sql`
 
 ## Technologies Used
 - PostgreSQL
@@ -50,4 +59,5 @@ ORDER BY total_revenue DESC;
 - pgAdmin
 
 ---
+
 *This project was completed as part of my Data Science Mastery Program.*
